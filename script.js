@@ -477,6 +477,6 @@
         video2.src = videoURL;
         video2.load();
       } else {
-        console.log("ویڈیو کا URL دستیاب نہیں ہے۔");
+        console.log("URL Error");
       }
     });
