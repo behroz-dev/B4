@@ -465,13 +465,18 @@
             });
     window.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
-      const videoURL = params.get('b4') || params.get('vid');
+      const videoURL = params.get('video') || params.get('q');
 
       if (videoURL) {
-        const video = document.getElementById('u-vid');
-        video.src = videoURL;
-        video.load();
+        const video1 = document.getElementById('u-vid');
+        const video2 = document.getElementById('p-vid');
+
+        video1.src = videoURL;
+        video1.load();
+
+        video2.src = videoURL;
+        video2.load();
       } else {
-        console.log("URL Error");
+        console.log("ویڈیو کا URL دستیاب نہیں ہے۔");
       }
     });
