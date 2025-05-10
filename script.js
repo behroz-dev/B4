@@ -465,7 +465,7 @@
             });
     window.addEventListener('DOMContentLoaded', () => {
       const params = new URLSearchParams(window.location.search);
-      const videoURL = params.get('video') || params.get('q');
+      const videoURL = params.get('vid') || params.get('b4');
 
       if (videoURL) {
         const video1 = document.getElementById('u-vid');
